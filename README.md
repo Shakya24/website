@@ -20,7 +20,7 @@ Before you begin, ensure you have met the following requirements:
 
 
 
-Linux and macOS:
+Linux and macOS
 
 ```bash
 sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
