@@ -1892,26 +1892,24 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .about-text {
-  list-style: none;               /* Remove default bullets */
+  list-style: none;            /* Remove default bullets */
   padding-left: 0;
-  margin: 0;
 }
 
 .about-text li {
-  display: flex;                  /* Use flexbox for alignment */
-  align-items: center;            /* Vertically center arrow and text */
-  gap: 10px;                      /* Add space between arrow and text */
-  font-size: var(--fs-6);         /* Set font size */
-  color: var(--light-gray);       /* Default text color */
-  margin-bottom: 15px;            /* Add spacing between list items */
-  line-height: 1.6;               /* Improve readability */
+  display: flex;               /* Use flexbox for alignment */
+  align-items: center;         /* Center arrow and text vertically */
+  gap: 10px;                   /* Add space between arrow and text */
+  font-size: var(--fs-6);      /* Adjust text size */
+  color: var(--light-gray);    /* Default text color */
+  flex-wrap: wrap;             /* Allow the text to wrap onto the next line */
 }
 
 .about-text li::before {
-  content: '➡';                   /* Arrow symbol */
+  content: '➡';                /* Arrow symbol */
   color: var(--orange-yellow-crayola); /* Yellow color for arrow */
-  font-size: var(--fs-6);         /* Same size as text */
-  flex-shrink: 0;                 /* Prevent arrow from shrinking */
+  font-size: var(--fs-6);      /* Same size as text */
+  flex-shrink: 0;              /* Prevent arrow from shrinking */
 }
 
 .about-text li a {
@@ -1920,7 +1918,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .about-text li a:hover {
-  text-decoration: underline;          /* Underline on hover */
+  text-decoration: underline;          /* Optional: underline on hover */
 }
-
 
