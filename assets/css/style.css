@@ -1892,22 +1892,23 @@ textarea.form-input::-webkit-resizer { display: none; }
   text-align: center;
 }
 
-
 .about-text {
-  list-style: none; /* Remove default bullet points */
+  list-style: none; /* Remove default bullets */
   padding-left: 0;
 }
 
 .about-text li {
-  display: flex; /* Use flexbox to keep the arrow and text aligned */
-  align-items: center; /* Vertically center the arrow and text */
-  gap: 10px; /* Add spacing between the arrow and text */
-  font-size: var(--fs-6); /* Use existing font size variable */
-  color: var(--light-gray); /* Adjust text color if needed */
+  display: flex; /* Use flexbox to keep arrow and text aligned */
+  align-items: center; /* Vertically center arrow and text */
+  gap: 10px; /* Add space between arrow and text */
+  font-size: var(--fs-6);
+  color: var(--light-gray);
+  flex-wrap: wrap; /* Allow text to wrap properly */
 }
 
 .about-text li::before {
   content: '➡'; /* Arrow symbol */
   color: var(--orange-yellow-crayola); /* Yellow color */
-  font-size: var(--fs-6); /* Match font size */
+  font-size: var(--fs-6);
+  flex-shrink: 0; /* Prevent the arrow from shrinking */
 }
