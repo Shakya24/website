@@ -1880,3 +1880,14 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+/*-----------------------------------*\
+  #AWARD SUMMARY STYLE
+\*-----------------------------------*/
+
+.award-summary {
+  font-size: var(--fs-6);
+  color: var(--orange-yellow-crayola); /* Using the yellow color defined in your custom property */
+  margin-top: 10px;
+  text-align: center;
+}
