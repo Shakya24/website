@@ -1887,7 +1887,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .award-summary {
   font-size: var(--fs-6);
-  color: var(--orange-yellow-crayola); /* Using the yellow color defined in your custom property */
+  color: var(--orange-yellow-crayola); 
   margin-top: 10px;
   text-align: center;
 }
