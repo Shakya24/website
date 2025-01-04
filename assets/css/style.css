@@ -1893,24 +1893,21 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 
-/* Styling the "About Me" list with yellow arrows */
-.about-text {
+.about-list {
   list-style: none; /* Remove default bullet points */
   padding-left: 0;
 }
 
-.about-text li {
-  position: relative;
-  padding-left: 25px; /* Space for the arrow */
-  margin-bottom: 10px;
-  font-size: var(--fs-6); /* Use your existing font size variable */
+.about-list li {
+  display: flex; /* Use flexbox to keep the arrow and text aligned */
+  align-items: center; /* Vertically center the arrow and text */
+  gap: 10px; /* Add spacing between the arrow and text */
+  font-size: var(--fs-6); /* Use existing font size variable */
   color: var(--light-gray); /* Adjust text color if needed */
 }
 
-.about-text li::before {
+.about-list li::before {
   content: '➡'; /* Arrow symbol */
-  position: absolute;
-  left: 0;
   color: var(--orange-yellow-crayola); /* Yellow color */
   font-size: var(--fs-6); /* Match font size */
 }
