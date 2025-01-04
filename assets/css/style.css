@@ -1891,11 +1891,10 @@ textarea.form-input::-webkit-resizer { display: none; }
   text-align: center;
 }
 
-
-
 .about-text {
   list-style: none;            /* Remove default bullets */
   padding-left: 0;
+  margin: 0;
 }
 
 .about-text li {
@@ -1904,7 +1903,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   gap: 10px;                   /* Add space between arrow and text */
   font-size: var(--fs-6);      /* Adjust text size */
   color: var(--light-gray);    /* Default text color */
-  flex-wrap: wrap;             /* Allow the text to wrap onto the next line */
+  flex-wrap: nowrap;           /* Prevent text from wrapping */
+  margin-bottom: 10px;         /* Add spacing between list items */
 }
 
 .about-text li::before {
@@ -1922,3 +1922,5 @@ textarea.form-input::-webkit-resizer { display: none; }
 .about-text li a:hover {
   text-decoration: underline;          /* Optional: underline on hover */
 }
+
+
