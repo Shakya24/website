@@ -1891,13 +1891,13 @@ textarea.form-input::-webkit-resizer { display: none; }
   text-align: center;
 }
 
-.custom-bullet-list {
+.about-text {
   list-style: none;               /* Remove default bullets */
   padding-left: 0;
   margin: 0;
 }
 
-.custom-bullet-list li {
+.about-text li {
   display: flex;                  /* Use flexbox for alignment */
   align-items: center;            /* Vertically center arrow and text */
   gap: 10px;                      /* Add space between arrow and text */
@@ -1907,19 +1907,19 @@ textarea.form-input::-webkit-resizer { display: none; }
   line-height: 1.6;               /* Improve readability */
 }
 
-.custom-bullet-list li::before {
+.about-text li::before {
   content: '➡';                   /* Arrow symbol */
   color: var(--orange-yellow-crayola); /* Yellow color for arrow */
   font-size: var(--fs-6);         /* Same size as text */
   flex-shrink: 0;                 /* Prevent arrow from shrinking */
 }
 
-.custom-bullet-list li a {
+.about-text li a {
   color: var(--orange-yellow-crayola); /* Yellow color for links */
   text-decoration: none;               /* Remove underline */
 }
 
-.custom-bullet-list li a:hover {
+.about-text li a:hover {
   text-decoration: underline;          /* Underline on hover */
 }
 
