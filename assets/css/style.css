@@ -1894,12 +1894,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 /* Styling the "About Me" list with yellow arrows */
-.about-list {
+.about-text {
   list-style: none; /* Remove default bullet points */
   padding-left: 0;
 }
 
-.about-list li {
+.about-text li {
   position: relative;
   padding-left: 25px; /* Space for the arrow */
   margin-bottom: 10px;
@@ -1907,7 +1907,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   color: var(--light-gray); /* Adjust text color if needed */
 }
 
-.about-list li::before {
+.about-text li::before {
   content: '➡'; /* Arrow symbol */
   position: absolute;
   left: 0;
