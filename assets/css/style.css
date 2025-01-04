@@ -1891,36 +1891,36 @@ textarea.form-input::-webkit-resizer { display: none; }
   text-align: center;
 }
 
-.about-text {
-  list-style: none;            /* Remove default bullets */
+.custom-bullet-list {
+  list-style: none;               /* Remove default bullets */
   padding-left: 0;
   margin: 0;
 }
 
-.about-text li {
-  display: flex;               /* Use flexbox for alignment */
-  align-items: center;         /* Center arrow and text vertically */
-  gap: 10px;                   /* Add space between arrow and text */
-  font-size: var(--fs-6);      /* Adjust text size */
-  color: var(--light-gray);    /* Default text color */
-  flex-wrap: nowrap;           /* Prevent text from wrapping */
-  margin-bottom: 10px;         /* Add spacing between list items */
+.custom-bullet-list li {
+  display: flex;                  /* Use flexbox for alignment */
+  align-items: center;            /* Vertically center arrow and text */
+  gap: 10px;                      /* Add space between arrow and text */
+  font-size: var(--fs-6);         /* Set font size */
+  color: var(--light-gray);       /* Default text color */
+  margin-bottom: 15px;            /* Add spacing between list items */
+  line-height: 1.6;               /* Improve readability */
 }
 
-.about-text li::before {
-  content: '➡';                /* Arrow symbol */
+.custom-bullet-list li::before {
+  content: '➡';                   /* Arrow symbol */
   color: var(--orange-yellow-crayola); /* Yellow color for arrow */
-  font-size: var(--fs-6);      /* Same size as text */
-  flex-shrink: 0;              /* Prevent arrow from shrinking */
+  font-size: var(--fs-6);         /* Same size as text */
+  flex-shrink: 0;                 /* Prevent arrow from shrinking */
 }
 
-.about-text li a {
+.custom-bullet-list li a {
   color: var(--orange-yellow-crayola); /* Yellow color for links */
   text-decoration: none;               /* Remove underline */
 }
 
-.about-text li a:hover {
-  text-decoration: underline;          /* Optional: underline on hover */
+.custom-bullet-list li a:hover {
+  text-decoration: underline;          /* Underline on hover */
 }
 
 
