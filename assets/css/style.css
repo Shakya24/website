@@ -1891,23 +1891,34 @@ textarea.form-input::-webkit-resizer { display: none; }
   text-align: center;
 }
 
+
+
 .about-text {
-  list-style: none; /* Remove default bullets */
+  list-style: none;            /* Remove default bullets */
   padding-left: 0;
 }
 
 .about-text li {
-  display: flex; /* Use flexbox to keep arrow and text aligned */
-  align-items: center; /* Vertically center arrow and text */
-  gap: 10px; /* Add space between arrow and text */
-  font-size: var(--fs-6);
-  color: var(--light-gray);
-  flex-wrap: wrap; /* Allow text to wrap properly */
+  display: flex;               /* Use flexbox for alignment */
+  align-items: center;         /* Center arrow and text vertically */
+  gap: 10px;                   /* Add space between arrow and text */
+  font-size: var(--fs-6);      /* Adjust text size */
+  color: var(--light-gray);    /* Default text color */
+  flex-wrap: wrap;             /* Allow the text to wrap onto the next line */
 }
 
 .about-text li::before {
-  content: '➡'; /* Arrow symbol */
-  color: var(--orange-yellow-crayola); /* Yellow color */
-  font-size: var(--fs-6);
-  flex-shrink: 0; /* Prevent the arrow from shrinking */
+  content: '➡';                /* Arrow symbol */
+  color: var(--orange-yellow-crayola); /* Yellow color for arrow */
+  font-size: var(--fs-6);      /* Same size as text */
+  flex-shrink: 0;              /* Prevent arrow from shrinking */
+}
+
+.about-text li a {
+  color: var(--orange-yellow-crayola); /* Yellow color for links */
+  text-decoration: none;               /* Remove underline */
+}
+
+.about-text li a:hover {
+  text-decoration: underline;          /* Optional: underline on hover */
 }
