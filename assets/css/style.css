@@ -1475,7 +1475,11 @@ textarea.form-input::-webkit-resizer { display: none; }
     scroll-padding-inline: 45px;
   }
 
-  .clients-item { min-width: calc(33.33% - 35px); }
+  .clients-item {
+  min-width: calc(50% - 20px); /* Adjust this value as needed */
+  scroll-snap-align: start;
+}
+
 
 
 
