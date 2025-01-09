@@ -494,19 +494,39 @@ main {
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
-/**
-.about .article-title { margin-bottom: 15px; }
 
-.about-text {
-  color: var(--light-gray);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
-  line-height: 1.6;
+.about-text p {
+  margin-bottom: 15px;
 }
 
-.about-text p { margin-bottom: 15px; }
+.about-text li {
+  display: flex;               /* Use flexbox for alignment */
+  align-items: center;         /* Align arrow and text in a single line */
+  gap: 8px;                    /* Space between arrow and text */
+  font-size: var(--fs-6);      /* Maintain consistent font size */
+  color: var(--light-gray);    /* Default text color */
+  flex-wrap: nowrap;           /* Prevent text wrapping */
+  line-height: 1.6;            /* Maintain line height */
+}
 
- */
+.about-text li a {
+  color: var(--light-gray);    /* Hyperlink color */
+  text-decoration: none;       /* Remove underline */
+}
+
+.about-text li a:hover {
+  text-decoration: underline;  /* Add underline on hover */
+}
+
+.about-text li::before {
+  content: '➡';                /* Arrow symbol as bullet point */
+  color: var(--orange-yellow-crayola); /* Yellow color for arrow */
+  font-size: var(--fs-6);      /* Same size as text */
+  flex-shrink: 0;              /* Prevent arrow from shrinking */
+  margin-right: 5px;           /* Space between arrow and text */
+}
+.about .article-title { margin-bottom: 15px; }
+
 
 
 /**
@@ -1944,26 +1964,18 @@ textarea.form-input::-webkit-resizer { display: none; }
   text-align: center;
 }
 
+.about .article-title {
+  margin-bottom: 15px;
+}
+
 .about-text {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
   list-style: none;            /* Remove default bullets */
   padding-left: 0;
-  margin-left: 20px;           /* Add left margin for proper alignment */
+  margin-left: 20px;           /* Add left margin for alignment */
 }
 
-.about-text li {
-  display: flex;               /* Use flexbox for alignment */
-  align-items: flex-start;     /* Align arrow and text at the top */
-  gap: 8px;                    /* Reduce space between arrow and text */
-  font-size: var(--fs-6);      /* Adjust text size */
-  color: var(--light-gray);    /* Default text color */
-  flex-wrap: wrap;             /* Allow the text to wrap onto the next line */
-  line-height: 1.5;            /* Increase line height for readability */
-}
 
-.about-text li::before {
-  content: '➡';                /* Arrow symbol */
-  color: var(--orange-yellow-crayola); /* Yellow color for arrow */
-  font-size: var(--fs-6);      /* Same size as text */
-  flex-shrink: 0;              /* Prevent arrow from shrinking */
-  margin-right: 5px;           /* Add space between arrow and text */
-}
