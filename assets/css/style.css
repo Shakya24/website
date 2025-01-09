@@ -2025,7 +2025,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   text-align: center;
 }
 
- 
 .about .article-title {
   margin-bottom: 15px;
 }
@@ -2049,14 +2048,16 @@ textarea.form-input::-webkit-resizer { display: none; }
   grid-template-columns: auto 1fr; /* Define two columns: arrow and text */
   gap: 8px;                    /* Add space between arrow and text */
   line-height: 1.8;            /* Line height for readability */
-  margin-bottom: 10px;         /* Add spacing between list items */
+  margin-bottom: 12px;         /* Add more spacing between list items */
   align-items: start;          /* Align items at the start */
+  word-wrap: break-word;       /* Ensure long text wraps properly */
 }
 
 .custom-bullet-list li::before {
   content: '➡';                /* Yellow arrow bullet */
   color: var(--orange-yellow-crayola); /* Arrow color */
   font-size: var(--fs-6);      /* Same size as text */
+  padding-right: 5px;          /* Add space after arrow */
 }
 
 .custom-bullet-list li a {
@@ -2067,5 +2068,21 @@ textarea.form-input::-webkit-resizer { display: none; }
 .custom-bullet-list li a:hover {
   text-decoration: underline;  /* Underline links on hover */
 }
- 
+
+/* Responsive fix for smaller screens */
+@media (max-width: 768px) {
+  .custom-bullet-list li {
+    grid-template-columns: auto 1fr; /* Maintain two-column layout */
+    gap: 6px;                        /* Slightly reduce gap for mobile */
+    line-height: 1.5;                /* Slightly tighter line height */
+  }
+
+  .custom-bullet-list li::before {
+    font-size: var(--fs-5);          /* Slightly smaller bullet for mobile */
+  }
+
+  .custom-bullet-list li a {
+    font-size: var(--fs-6);          /* Ensure link text is consistent */
+  }
+}
 
