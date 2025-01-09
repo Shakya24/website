@@ -1933,10 +1933,4 @@ textarea.form-input::-webkit-resizer { display: none; }
   line-height: 1.5;   /* Improve readability */
 }
 
-.about-text {
-  margin-top: 10px; /* Reduce top margin */
-  margin-bottom: 10px; /* Reduce bottom margin */
-}
-
-
 
