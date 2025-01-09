@@ -1943,6 +1943,20 @@ textarea.form-input::-webkit-resizer { display: none; }
   text-align: center;
 }
 
+.about-text {
+  list-style: none;            /* Remove default bullets */
+  padding-left: 0;
+}
+
+.about-text li {
+  display: flex;               /* Use flexbox for alignment */
+  align-items: center;         /* Center arrow and text vertically */
+  gap: 10px;                   /* Add space between arrow and text */
+  font-size: var(--fs-6);      /* Adjust text size */
+  color: var(--light-gray);    /* Default text color */
+  flex-wrap: wrap;             /* Allow the text to wrap onto the next line */
+}
+
 .about-text li::before {
   content: '➡';                /* Arrow symbol */
   color: var(--orange-yellow-crayola); /* Yellow color for arrow */
