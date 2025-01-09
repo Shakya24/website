@@ -1975,7 +1975,35 @@ textarea.form-input::-webkit-resizer { display: none; }
   line-height: 1.6;
   list-style: none;            /* Remove default bullets */
   padding-left: 0;
-  margin-left: 20px;           /* Add left margin for alignment */
+}
+
+.about-text ul {
+  padding-left: 0;             /* Remove default padding */
+  margin: 0;
+}
+
+.custom-bullet-list li {
+  display: grid;               /* Use grid layout for proper alignment */
+  grid-template-columns: auto 1fr; /* Define two columns: arrow and text */
+  gap: 8px;                    /* Add space between arrow and text */
+  line-height: 1.8;            /* Line height for readability */
+  margin-bottom: 10px;         /* Add spacing between list items */
+  align-items: start;          /* Align items at the start */
+}
+
+.custom-bullet-list li::before {
+  content: '➡';                /* Yellow arrow bullet */
+  color: var(--orange-yellow-crayola); /* Arrow color */
+  font-size: var(--fs-6);      /* Same size as text */
+}
+
+.custom-bullet-list li a {
+  color: var(--orange-yellow-crayola); /* Hyperlink color */
+  text-decoration: none;       /* Remove underline from links */
+}
+
+.custom-bullet-list li a:hover {
+  text-decoration: underline;  /* Underline links on hover */
 }
 
 
