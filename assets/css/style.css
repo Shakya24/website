@@ -1922,15 +1922,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 
-.custom-bullet-list {
-  list-style-type: disc;
-  margin: 0;
-  padding: 0 20px; /* Indent the bullets slightly */
-}
 
-.custom-bullet-list li {
-  margin-bottom: 8px; /* Reduce spacing between bullet points */
-  line-height: 1.5;   /* Improve readability */
-}
 
 
