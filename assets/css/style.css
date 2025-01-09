@@ -1389,26 +1389,49 @@ textarea.form-input::-webkit-resizer { display: none; }
    * #ABOUT
    */
 
-  .about .article-title { margin-bottom: 20px; }
+ .about .article-title {
+  margin-bottom: 15px;
+}
 
-  .about-text { margin-bottom: 40px; }
+.about-text {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  list-style: none;            /* Remove default bullets */
+  padding-left: 0;
+}
 
-  /* service */
+.about-text ul {
+  padding-left: 0;             /* Remove left padding */
+  margin: 0;
+}
 
-  .service-item {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 18px;
-    padding: 30px;
-  }
+.custom-bullet-list li {
+  display: flex;               /* Use flexbox for alignment */
+  align-items: flex-start;     /* Align arrow and text at the top */
+  gap: 8px;                    /* Add space between arrow and text */
+  line-height: 1.8;            /* Line height for readability */
+  margin-bottom: 10px;         /* Add spacing between list items */
+}
 
-  .service-icon-box {
-    margin-bottom: 0;
-    margin-top: 5px;
-  }
+.custom-bullet-list li::before {
+  content: '➡';                /* Yellow arrow bullet */
+  color: var(--orange-yellow-crayola); /* Arrow color */
+  font-size: var(--fs-6);      /* Same size as text */
+  flex-shrink: 0;              /* Prevent arrow from shrinking */
+  margin-right: 5px;           /* Space between arrow and text */
+}
 
-  .service-content-box { text-align: left; }
+.custom-bullet-list li a {
+  color: var(--orange-yellow-crayola); /* Hyperlink color */
+  text-decoration: none;       /* Remove underline from links */
+  word-wrap: break-word;       /* Ensure long text wraps correctly */
+}
+
+.custom-bullet-list li a:hover {
+  text-decoration: underline;  /* Underline links on hover */
+}
 
   /* testimonials */
 
