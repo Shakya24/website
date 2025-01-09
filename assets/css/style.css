@@ -1947,15 +1947,17 @@ textarea.form-input::-webkit-resizer { display: none; }
 .about-text {
   list-style: none;            /* Remove default bullets */
   padding-left: 0;
+  margin-left: 20px;           /* Add left margin for proper alignment */
 }
 
 .about-text li {
   display: flex;               /* Use flexbox for alignment */
-  align-items: center;         /* Center arrow and text vertically */
-  gap: 10px;                   /* Add space between arrow and text */
+  align-items: flex-start;     /* Align arrow and text at the top */
+  gap: 8px;                    /* Reduce space between arrow and text */
   font-size: var(--fs-6);      /* Adjust text size */
   color: var(--light-gray);    /* Default text color */
   flex-wrap: wrap;             /* Allow the text to wrap onto the next line */
+  line-height: 1.5;            /* Increase line height for readability */
 }
 
 .about-text li::before {
@@ -1963,4 +1965,5 @@ textarea.form-input::-webkit-resizer { display: none; }
   color: var(--orange-yellow-crayola); /* Yellow color for arrow */
   font-size: var(--fs-6);      /* Same size as text */
   flex-shrink: 0;              /* Prevent arrow from shrinking */
+  margin-right: 5px;           /* Add space between arrow and text */
 }
