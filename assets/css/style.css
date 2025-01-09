@@ -494,7 +494,7 @@ main {
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
-
+/**
 .about .article-title { margin-bottom: 15px; }
 
 .about-text {
@@ -506,6 +506,7 @@ main {
 
 .about-text p { margin-bottom: 15px; }
 
+ */
 
 
 /**
