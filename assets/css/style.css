@@ -1922,6 +1922,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .custom-bullet-list li {
+  display: inline-block;
   white-space: nowrap;
+  margin-bottom: 8px; /* Add spacing if needed */
 }
+
 
