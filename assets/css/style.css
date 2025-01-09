@@ -1921,3 +1921,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   text-decoration: underline;          /* Optional: underline on hover */
 }
 
+.custom-bullet-list li {
+  white-space: nowrap;
+}
+
