@@ -1921,10 +1921,15 @@ textarea.form-input::-webkit-resizer { display: none; }
   text-decoration: underline;          /* Optional: underline on hover */
 }
 
+.custom-bullet-list {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 0;
+}
+
 .custom-bullet-list li {
-  display: inline-block;
-  white-space: nowrap;
-  margin-bottom: 8px; /* Add spacing if needed */
+  margin-bottom: 10px; /* Adds spacing between bullet points */
+  line-height: 1.6;    /* Improves readability */
 }
 
 
