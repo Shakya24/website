@@ -2039,25 +2039,25 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .about-text ul {
-  padding-left: 0;             /* Remove default padding */
+  padding-left: 0;             /* Remove left padding */
   margin: 0;
 }
 
 .custom-bullet-list li {
-  display: grid;               /* Use grid layout for proper alignment */
-  grid-template-columns: auto 1fr; /* Define two columns: arrow and text */
+  display: flex;               /* Use flexbox for proper alignment */
+  align-items: flex-start;     /* Align arrow and text at the top */
   gap: 8px;                    /* Add space between arrow and text */
   line-height: 1.8;            /* Line height for readability */
-  margin-bottom: 12px;         /* Add more spacing between list items */
-  align-items: start;          /* Align items at the start */
+  margin-bottom: 10px;         /* Add spacing between list items */
   word-wrap: break-word;       /* Ensure long text wraps properly */
+  flex-wrap: wrap;             /* Allow text to wrap naturally */
 }
 
 .custom-bullet-list li::before {
   content: '➡';                /* Yellow arrow bullet */
   color: var(--orange-yellow-crayola); /* Arrow color */
   font-size: var(--fs-6);      /* Same size as text */
-  padding-right: 5px;          /* Add space after arrow */
+  flex-shrink: 0;              /* Prevent arrow from shrinking */
 }
 
 .custom-bullet-list li a {
@@ -2072,7 +2072,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 /* Responsive fix for smaller screens */
 @media (max-width: 768px) {
   .custom-bullet-list li {
-    grid-template-columns: auto 1fr; /* Maintain two-column layout */
     gap: 6px;                        /* Slightly reduce gap for mobile */
     line-height: 1.5;                /* Slightly tighter line height */
   }
@@ -2085,4 +2084,5 @@ textarea.form-input::-webkit-resizer { display: none; }
     font-size: var(--fs-6);          /* Ensure link text is consistent */
   }
 }
+
 
