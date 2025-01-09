@@ -1943,4 +1943,9 @@ textarea.form-input::-webkit-resizer { display: none; }
   text-align: center;
 }
 
-
+.about-text li::before {
+  content: '➡';                /* Arrow symbol */
+  color: var(--orange-yellow-crayola); /* Yellow color for arrow */
+  font-size: var(--fs-6);      /* Same size as text */
+  flex-shrink: 0;              /* Prevent arrow from shrinking */
+}
