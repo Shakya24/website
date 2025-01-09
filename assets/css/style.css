@@ -2044,45 +2044,47 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .custom-bullet-list li {
-  display: flex;               /* Use flexbox for proper alignment */
-  align-items: flex-start;     /* Align arrow and text at the top */
-  gap: 8px;                    /* Add space between arrow and text */
-  line-height: 1.8;            /* Line height for readability */
-  margin-bottom: 10px;         /* Add spacing between list items */
-  word-wrap: break-word;       /* Ensure long text wraps properly */
-  flex-wrap: wrap;             /* Allow text to wrap naturally */
+  display: flex;                  /* Use flexbox for proper alignment */
+  align-items: flex-start;        /* Align arrow and text at the top */
+  gap: 8px;                       /* Add space between arrow and text */
+  line-height: 1.8;               /* Line height for readability */
+  margin-bottom: 10px;            /* Add spacing between list items */
+  word-wrap: break-word;          /* Ensure long text wraps properly */
+  flex-wrap: wrap;                /* Allow text to wrap correctly */
 }
 
 .custom-bullet-list li::before {
-  content: '➡';                /* Yellow arrow bullet */
+  content: '➡';                   /* Yellow arrow bullet */
   color: var(--orange-yellow-crayola); /* Arrow color */
-  font-size: var(--fs-6);      /* Same size as text */
-  flex-shrink: 0;              /* Prevent arrow from shrinking */
+  font-size: var(--fs-6);         /* Same size as text */
+  flex-shrink: 0;                 /* Prevent arrow from shrinking */
+  margin-right: 5px;              /* Add spacing after arrow */
 }
 
 .custom-bullet-list li a {
   color: var(--orange-yellow-crayola); /* Hyperlink color */
-  text-decoration: none;       /* Remove underline from links */
+  text-decoration: none;          /* Remove underline from links */
 }
 
 .custom-bullet-list li a:hover {
-  text-decoration: underline;  /* Underline links on hover */
+  text-decoration: underline;     /* Underline links on hover */
 }
 
 /* Responsive fix for smaller screens */
 @media (max-width: 768px) {
   .custom-bullet-list li {
-    gap: 6px;                        /* Slightly reduce gap for mobile */
-    line-height: 1.5;                /* Slightly tighter line height */
+    gap: 6px;                     /* Slightly reduce gap for mobile */
+    line-height: 1.5;             /* Slightly tighter line height */
   }
 
   .custom-bullet-list li::before {
-    font-size: var(--fs-5);          /* Slightly smaller bullet for mobile */
+    font-size: var(--fs-5);       /* Slightly smaller bullet for mobile */
   }
 
   .custom-bullet-list li a {
-    font-size: var(--fs-6);          /* Ensure link text is consistent */
+    font-size: var(--fs-6);       /* Ensure link text is consistent */
   }
 }
+
 
 
