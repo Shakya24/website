@@ -1931,3 +1931,14 @@ textarea.form-input::-webkit-resizer { display: none; }
     height: 700px; /* Adjust height for smaller screens */
   }
 }
+
+/*-----------------------------------*\
+  #AWARD SUMMARY STYLE
+\*-----------------------------------*/
+
+.award-summary {
+  font-size: var(--fs-6);
+  color: var(--orange-yellow-crayola); 
+  margin-top: 10px;
+  text-align: center;
+}
