@@ -2025,6 +2025,19 @@ textarea.form-input::-webkit-resizer { display: none; }
   text-align: center;
 }
 
+
+.about .article-title { margin-bottom: 15px; }
+
+.about-text {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+
+.about-text p { margin-bottom: 15px; }
+
+/**
 .about .article-title {
   margin-bottom: 15px;
 }
@@ -2042,7 +2055,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   padding-left: 0;             /* Remove left padding */
   margin: 0;
 }
-  /**
+  
 .custom-bullet-list li {
   display: flex;                  /* Use flexbox for proper alignment */
   align-items: flex-start;        /* Align arrow and text at the top */
