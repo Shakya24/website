@@ -555,9 +555,16 @@ main {
   line-height: 1.6;
 }
 
+/* Update project tech (RFM, Churn, etc.) color */
 .project-tech {
-  color:yellow;
+  color: var(--orange-yellow-crayola); /* Match theme yellow color */
+  font-weight: var(--fw-500); /* Add slight emphasis */
+  font-size: var(--fs-5); /* Match other project descriptions */
+  text-transform: capitalize; /* Ensure consistent text style */
+  display: inline-block; /* Ensure it aligns properly with other text */
+  margin-left: 5px;
 }
+
 
 
 /**
