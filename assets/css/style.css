@@ -18,7 +18,7 @@
 :root {
 
   /**
-   * color
+   * colors
    */
 
   /* gradient */
@@ -495,6 +495,16 @@ main {
   #ABOUT
 \*-----------------------------------*/
 
+.about .article-title { margin-bottom: 15px; }
+
+.about-text {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+
+.about-text p { margin-bottom: 15px; }
 
 
 
@@ -502,7 +512,6 @@ main {
  * #service 
  */
 
-/** original
 .service { margin-bottom: 35px; }
 
 .service-title { margin-bottom: 20px; }
@@ -544,74 +553,6 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
   line-height: 1.6;
-}
-*/
-
-.service {
-  margin-bottom: 35px;
-}
-
-.service-title {
-  margin-bottom: 20px;
-}
-
-.service-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-}
-
-.service-item {
-  position: relative;
-  background: var(--border-gradient-onyx);
-  padding: 20px;
-  border-radius: 14px;
-  box-shadow: var(--shadow-2);
-  z-index: 1;
-}
-
-.service-item::before {
-  content: "";
-  position: absolute;
-  inset: 1px;
-  background: var(--bg-gradient-jet);
-  border-radius: inherit;
-  z-index: -1;
-}
-
-.service-icon-box {
-  margin-bottom: 10px;
-}
-
-.service-icon-box img {
-  margin: auto;
-}
-
-.service-content-box {
-  text-align: center;
-}
-
-.service-item-title {
-  margin-bottom: 7px;
-}
-
-.service-item-text {
-  color: var(--light-gray);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-3);
-  line-height: 1.6;
-  padding-left: 20px;          /* Add padding for bullet alignment */
-  list-style-type: disc;       /* Use disc for bullet points */
-  list-style-position: inside; /* Position bullet points inside the content box */
-}
-
-.service-item-text li {
-  margin-bottom: 5px;          /* Add spacing between bullet points */
-}
-
-.service-item-text li::marker {
-  color: var(--orange-yellow-crayola); /* Yellow color for the bullet */
-  font-size: 1.2em;           /* Slightly increase bullet size */
 }
 
 .project-tech {
@@ -1458,49 +1399,26 @@ textarea.form-input::-webkit-resizer { display: none; }
    * #ABOUT
    */
 
- .about .article-title {
-  margin-bottom: 15px;
-}
+  .about .article-title { margin-bottom: 20px; }
 
-.about-text {
-  color: var(--light-gray);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
-  line-height: 1.6;
-  list-style: none;            /* Remove default bullets */
-  padding-left: 0;
-}
+  .about-text { margin-bottom: 40px; }
 
-.about-text ul {
-  padding-left: 0;             /* Remove left padding */
-  margin: 0;
-}
- /**
-.custom-bullet-list li {
-  display: flex;               /* Use flexbox for alignment */
-  align-items: flex-start;     /* Align arrow and text at the top */
-  gap: 8px;                    /* Add space between arrow and text */
-  line-height: 1.8;            /* Line height for readability */
-  margin-bottom: 10px;         /* Add spacing between list items */
-}
-*/
-.custom-bullet-list li::before {
-  content: '';                /* Yellow arrow bullet */
-  color: var(--orange-yellow-crayola); /* Arrow color */
-  font-size: var(--fs-6);      /* Same size as text */
-  flex-shrink: 0;              /* Prevent arrow from shrinking */
-  margin-right: 5px;           /* Space between arrow and text */
-}
+  /* service */
 
-.custom-bullet-list li a {
-  color: var(--orange-yellow-crayola); /* Hyperlink color */
-  text-decoration: none;       /* Remove underline from links */
-  word-wrap: break-word;       /* Ensure long text wraps correctly */
-}
+  .service-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 30px;
+  }
 
-.custom-bullet-list li a:hover {
-  text-decoration: underline;  /* Underline links on hover */
-}
+  .service-icon-box {
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+
+  .service-content-box { text-align: left; }
 
   /* testimonials */
 
@@ -2013,26 +1931,3 @@ textarea.form-input::-webkit-resizer { display: none; }
     height: 700px; /* Adjust height for smaller screens */
   }
 }
-
-/*-----------------------------------*\
-  #AWARD SUMMARY STYLE
-\*-----------------------------------*/
-
-.award-summary {
-  font-size: var(--fs-6);
-  color: var(--orange-yellow-crayola); 
-  margin-top: 10px;
-  text-align: center;
-}
-
-
-.about .article-title { margin-bottom: 15px; }
-
-.about-text {
-  color: var(--light-gray);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
-  line-height: 1.6;
-}
-
-.about-text p { margin-bottom: 15px; }
