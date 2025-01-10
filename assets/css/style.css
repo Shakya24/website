@@ -2042,7 +2042,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   padding-left: 0;             /* Remove left padding */
   margin: 0;
 }
-
+  /**
 .custom-bullet-list li {
   display: flex;                  /* Use flexbox for proper alignment */
   align-items: flex-start;        /* Align arrow and text at the top */
@@ -2060,6 +2060,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   flex-shrink: 0;                 /* Prevent arrow from shrinking */
   margin-right: 5px;              /* Add spacing after arrow */
 }
+ */
 
 .custom-bullet-list li a {
   color: var(--orange-yellow-crayola); /* Hyperlink color */
@@ -2069,7 +2070,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 .custom-bullet-list li a:hover {
   text-decoration: underline;     /* Underline links on hover */
 }
-
+  /**
 /* Responsive fix for smaller screens */
 @media (max-width: 768px) {
   .custom-bullet-list li {
@@ -2085,6 +2086,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     font-size: var(--fs-6);       /* Ensure link text is consistent */
   }
 }
-
+ */
 
 
