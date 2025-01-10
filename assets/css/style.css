@@ -1944,27 +1944,20 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 
-/* Custom bullet list styling */
-.custom-bullet-list {
-  list-style: none; /* Remove default bullets */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margin */
-}
-
 .custom-bullet-list li {
-  position: relative;
-  padding-left: 25px; /* Space for custom bullet */
-  margin-bottom: 10px; /* Space between bullet points */
-  font-size: var(--fs-6); /* Use existing font size variable */
-  color: var(--light-gray); /* Use light gray color */
+  display: flex;
+  align-items: flex-start;
+  gap: 10px; /* Space between bullet and text */
+  margin-bottom: 10px;
+  font-size: var(--fs-6);
+  color: var(--light-gray);
   line-height: 1.6;
+  word-break: break-word; /* Ensure long words break correctly */
 }
 
-/* Add custom bullet before each list item */
 .custom-bullet-list li::before {
-  content: "•"; /* Custom bullet character */
-  position: absolute;
-  left: 0;
-  font-size: var(--fs-5); /* Slightly larger bullet size */
-  color: var(--orange-yellow-crayola); /* Use the theme color */
+  content: "•";
+  font-size: var(--fs-5);
+  color: var(--orange-yellow-crayola);
 }
+
