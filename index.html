@@ -35,6 +35,42 @@
       </div>
       <ul class="contacts-list">
         <!-- Contacts -->
+        <li class="contact-item">
+          <div class="icon-box">
+            <ion-icon name="mail-outline"></ion-icon>
+          </div>
+          <div class="contact-info">
+            <p class="contact-title">Email</p>
+            <a href="mailto:ayushi.s.2023@mitb.smu.edu.sg" class="contact-link">ayushi.s.2023@mitb.smu.edu.sg</a>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="icon-box">
+            <ion-icon name="phone-portrait-outline"></ion-icon>
+          </div>
+          <div class="contact-info">
+            <p class="contact-title">Phone</p>
+            <a href="tel:+6590370392" class="contact-link">+65 90370392</a>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="icon-box">
+            <ion-icon name="calendar-outline"></ion-icon>
+          </div>
+          <div class="contact-info">
+            <p class="contact-title">Birthday</p>
+            <time datetime="1995-04-24">Apr 24, 1995</time>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="icon-box">
+            <ion-icon name="location-outline"></ion-icon>
+          </div>
+          <div class="contact-info">
+            <p class="contact-title">Location</p>
+            <address>Killiney Road, Singapore</address>
+          </div>
+        </li>
       </ul>
     </aside>
 
@@ -51,15 +87,35 @@
         </ul>
       </nav>
 
-      <!-- ABOUT -->
+      <!-- ABOUT SECTION -->
       <article id="about" class="about active" data-page="about">
         <header>
           <h2 class="h2 article-title">About me</h2>
         </header>
-        <!-- About content -->
+        <section class="about-text">
+          <ul class="custom-bullet-list">
+            <li>Versatile professional with ~7 years of experience in Consulting and Data Analytics</li>
+            <li>
+              Master’s in Data Science and
+              <a class="project-tech" href="https://drive.google.com/file/d/1fw_ilpzSmLRhxenTzTlKyWUHRmpNqNY5/view?usp=drive_link"
+                target="_blank" style="color: var(--orange-yellow-crayola); text-decoration: none;">
+                Recipient of MITB Scholarship
+              </a>
+              from Singapore Management University
+            </li>
+            <li>6 years of on-site client transformation projects architecting data-driven risk solutions for 20+ clients across Telecom, Healthcare, Financial Services, Media, and Q-commerce.</li>
+            <li>Stakeholder Engagement Expert recognized for cross-cultural management and blending audit practices with advanced data techniques.</li>
+            <li>
+              <a class="project-tech" href="https://www.credly.com/badges/d73edc7f-6a58-4a7b-ac88-883fcff863b5/linked_in_profile"
+                target="_blank" style="color: var(--orange-yellow-crayola); text-decoration: none;">
+                Certified Coach by Grant Thornton US
+              </a> with 3+ years of leadership experience
+            </li>
+          </ul>
+        </section>
       </article>
 
-      <!-- RESUME -->
+      <!-- RESUME SECTION -->
       <article id="resume" data-page="resume">
         <header>
           <h2 class="h2 article-title">Resume</h2>
@@ -70,10 +126,39 @@
             <span>Download</span>
           </button>
         </a>
-        <!-- Timeline content -->
+        <section class="timeline">
+          <!-- Experience content -->
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">foodpanda, Singapore</h4>
+              <h4 class="h4 timeline-item-title">Commercial Data Analyst </h4>
+              <span> Dec 2023 — Jun 2024</span>
+              <p class="timeline-text">
+                Streamlined vendor operations with advanced analytics and developed automated performance dashboards on Google Cloud Platform.
+                Python-based web scraping tools to deliver actionable insights, consistently boosting decision-making and operational efficiency.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Grant Thornton US</h4>
+              <h4 class="h4 timeline-item-title">Senior Associate - Risk Analytics </h4>
+              <span>Jun 2022 — Jul 2023</span>
+              <p class="timeline-text">
+                Led high-stakes client engagements across diverse client portfolios, translating complex audit requirements into comprehensive data solutions.
+                Implemented ETL processes, and created advanced visualization dashboards, while mentoring teams in advanced analytical techniques.
+              </p>
+            </li>
+            <!-- Additional Experience Items -->
+          </ol>
+        </section>
       </article>
 
-      <!-- PORTFOLIO -->
+      <!-- PORTFOLIO SECTION -->
       <article id="portfolio" data-page="portfolio">
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
@@ -81,7 +166,7 @@
         <!-- Portfolio content -->
       </article>
 
-      <!-- BLOG -->
+      <!-- BLOG SECTION -->
       <article id="blog" data-page="blog">
         <header>
           <h2 class="h2 article-title">Accomplishments</h2>
@@ -89,12 +174,17 @@
         <!-- Blog content -->
       </article>
 
-      <!-- CONTACT -->
+      <!-- CONTACT SECTION -->
       <article id="contact" data-page="contact">
         <header>
           <h2 class="h2 article-title">Contact</h2>
         </header>
-        <!-- Contact content -->
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+          <div class="google-form-container">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSesiQtADdP225MrveX5eyB0oL8Sps3PPH6ktD1nzVnfWIhZsw/viewform?embedded=true" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </section>
       </article>
     </div>
   </main>
