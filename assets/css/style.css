@@ -1952,21 +1952,19 @@ textarea.form-input::-webkit-resizer { display: none; }
   text-align: center;
 }
 
+/* Adjust list item spacing and line height for smaller screens */
+@media (max-width: 480px) {
+  .custom-bullet-list li {
+    line-height: 1.4; /* Reduce line height */
+    margin-bottom: 8px; /* Adjust margin for better spacing */
+    padding-right: 10px; /* Add padding to prevent text overflow */
+  }
 
-.custom-bullet-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px; /* Space between bullet and text */
-  margin-bottom: 10px;
-  font-size: var(--fs-6);
-  color: var(--light-gray);
-  line-height: 1.6;
-  word-break: break-word; /* Ensure long words break correctly */
+  .custom-bullet-list li span {
+    display: inline-block;
+    word-break: break-word; /* Ensure long words break properly */
+  }
 }
 
-.custom-bullet-list li::before {
-  content: "•";
-  font-size: var(--fs-5);
-  color: var(--orange-yellow-crayola);
-}
+
 
