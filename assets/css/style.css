@@ -1970,19 +1970,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 
-/* Adjust list item spacing and line height for smaller screens */
-@media (max-width: 480px) {
-  .custom-bullet-list li {
-    line-height: 1.4; /* Reduce line height */
-    margin-bottom: 8px; /* Adjust margin for better spacing */
-    padding-right: 10px; /* Add padding to prevent text overflow */
-  }
-
-  .custom-bullet-list li span {
-    display: inline-block;
-    word-break: break-word; /* Ensure long words break properly */
-  }
-}
 
 
 
