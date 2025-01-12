@@ -1931,22 +1931,23 @@ textarea.form-input::-webkit-resizer { display: none; }
     height: 700px; /* Adjust height for smaller screens */
   }
 }
-
-
 .custom-bullet-list {
   list-style: none; /* Remove default bullet */
   padding-left: 0;  /* Remove default padding */
 }
 
+
+
 .custom-bullet-list li {
-  position: relative;
-  padding-left: 1.5em; /* Indent text after the bullet */
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
 }
 
 .custom-bullet-list li::before {
-  content: "●"; /* Custom bullet */
-  position: absolute;
-  left: 0;
-  color: var(--orange-yellow-crayola); /* Use your preferred color */
-  font-weight: bold; /* Ensure bullet is prominent */
+  content: "●";
+  color: var(--orange-yellow-crayola); /* Your preferred color */
+  font-weight: bold;
+  margin-top: 3px; /* Adjust bullet alignment */
 }
+
