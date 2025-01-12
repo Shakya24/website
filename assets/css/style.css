@@ -1933,21 +1933,20 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 
-li {
-  list-style-position: inside;
-  padding-left: 0;
+.custom-bullet-list {
+  list-style: none; /* Remove default bullet */
+  padding-left: 0;  /* Remove default padding */
 }
 
 .custom-bullet-list li {
   position: relative;
-  padding-left: 20px;
-  text-indent: -20px;
+  padding-left: 1.5em; /* Indent text after the bullet */
 }
 
 .custom-bullet-list li::before {
-  content: "●";
+  content: "●"; /* Custom bullet */
   position: absolute;
   left: 0;
-  color: var(--orange-yellow-crayola); /* Adjust color as needed */
+  color: var(--orange-yellow-crayola); /* Use your preferred color */
+  font-weight: bold; /* Ensure bullet is prominent */
 }
-
