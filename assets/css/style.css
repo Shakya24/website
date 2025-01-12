@@ -1937,3 +1937,17 @@ li {
   list-style-position: inside;
   padding-left: 0;
 }
+
+.custom-bullet-list li {
+  position: relative;
+  padding-left: 20px;
+  text-indent: -20px;
+}
+
+.custom-bullet-list li::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  color: var(--orange-yellow-crayola); /* Adjust color as needed */
+}
+
